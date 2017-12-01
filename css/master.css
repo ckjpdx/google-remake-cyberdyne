@@ -4,8 +4,16 @@
   background-position: right;
   background-size: contain;
 }
+div.bg {
+  height: 300px
+}
+div.bg-head {
+  background-image: url(../img/head.jpg);
+  background-size: cover;
+}
 div.bg-ai {
-  background-image: url(../img/ai.jpg);
+  background-size: cover;
+  background-image: url(../img/hand.png);
 }
 section.area-white {
 
@@ -18,4 +26,10 @@ section.area-gray-light {
 }
 section.area-blue {
   background: blue;
+}
+p.text-blue {
+  color: blue;
+}
+img.card-top-img {
+  object-fit: cover;
 }
