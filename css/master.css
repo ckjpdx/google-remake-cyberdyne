@@ -1,3 +1,12 @@
+nav {
+  border-bottom: 1px solid black;
+}
+
+nav img {
+  width: 100px;
+  margin: -13px 0;
+}
+
 div.bg {
   height: 300px
 }
@@ -37,16 +46,20 @@ section.area-gray-light {
   background: #fafafa;
 }
 section.area-blue {
-  background: #3466d6;
+  background: var(--cyberdyne-blue);
+}
+h1.title {
+  color: var(--cyberdyne-blue);
+  text-shadow: 5px 0px var(--cyberdyne-gray);
 }
 p.brain-text {
   position: relative;
   bottom: -50%;
-  background: #a694b8cc;
-  text-shadow: 1px 1px 1px white;
+  background: #FFFFFFCC;
+  text-shadow: 1px 1px 1px black;
 }
-.text-blue {
-  color: #3367d6;
+.color-cyberdyne {
+  color: var(--cyberdyne-blue);
 }
 .fine-print {
   font-size: 0.8em;
@@ -66,4 +79,9 @@ img.card-top-img {
   .card {
     height: 100%;
   }
+}
+
+:root {
+  --cyberdyne-blue: #8da6bb;
+  --cyberdyne-gray: #d5d7d4;
 }

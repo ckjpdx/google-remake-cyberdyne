@@ -15,39 +15,62 @@
     <section class="area-white">
       <div class="container-fluid">
         <!-- Nav >> -->
-        <ul class="nav nav-tabs justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="Cyberdyne Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn color-cyberdyne my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
         <!-- << Nav -->
         <!-- Masthead >> -->
         <div class="row bg bg-brain d-sm-none d-md-flex">
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <h1>Cyberdyne</h1>
-            <h4>Actuate tomorrow</h4>
+          <div class="col-md-1 col-lg-2">
+            <!-- Empty Left Column -->
           </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-4">
-            <p class="text-blue fine-print brain-text rounded p-1">The need for cybernetic assistance has been growing due to our growing red zones, terrorism, and recycle mining on the rise.
+          <div class="col-md-4 col-lg-3">
+            <h1 class="title display-2">Cyberdyne</h1>
+            <h4>Actuate Tomorrow</h4>
+          </div>
+          <div class="col-md-3 col-lg-2">
+            <!-- Empty Center Column -->
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <p class="color-cyberdyne fine-print brain-text rounded p-1">The need for cybernetic assistance has been growing due to our growing red zones, terrorism, and recycle mining on the rise.
             </p>
+          </div>
+          <div class="d-none d-lg-flex col-2">
+            <!-- Empty Right Column -->
           </div>
         </div>
         <!-- << Masthead -->
@@ -179,7 +202,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
-            <h1>Get the latest data, insights, and inspiration from Google.</h1>
+            <h1>Get the latest data, alerts, and red zone reports from Cyberdyne.</h1>
           </div>
           <div class="col-lg-6">
             <input type="text" name="" value="Email Address">
