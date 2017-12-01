@@ -1,0 +1,21 @@
+.bg-phone {
+  background-image: url(../img/brain.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+div.bg-ai {
+  background-image: url(../img/ai.jpg);
+}
+section.area-white {
+
+}
+section.area-gray {
+  background: #DDD;
+}
+section.area-gray-light {
+  background: #EEE;
+}
+section.area-blue {
+  background: blue;
+}
