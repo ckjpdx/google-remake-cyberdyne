@@ -2,6 +2,7 @@ div.bg {
   height: 300px
 }
 div.bg-brain {
+  margin-top: 25px;
   padding-top: 50px;
   background-image: url(../img/brain.png);
   background-repeat: no-repeat;
@@ -38,7 +39,12 @@ section.area-gray-light {
 section.area-blue {
   background: #3466d6;
 }
-
+p.brain-text {
+  position: relative;
+  bottom: -50%;
+  background: #a694b8cc;
+  text-shadow: 1px 1px 1px white;
+}
 .text-blue {
   color: #3367d6;
 }
@@ -48,9 +54,16 @@ section.area-blue {
 img.card-top-img {
   object-fit: cover;
 }
-
 @media screen and (max-width:991px) {
   .card, .bg {
     margin: 10px 0;
+  }
+  section.area-white {
+    padding: 0;
+  }
+}
+@media screen and (min-width:992px) {
+  .card {
+    height: 100%;
   }
 }
