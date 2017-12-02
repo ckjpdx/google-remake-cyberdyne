@@ -1,7 +1,9 @@
 nav {
   border-bottom: 1px solid black;
 }
-
+button.btn {
+  border: 1px solid var(--cyberdyne-blue);
+}
 nav img {
   width: 100px;
   margin: -13px 0;
@@ -27,6 +29,15 @@ div.bg-head {
   background-image: url(../img/head.jpg);
   background-size: cover;
 }
+div.bg-skynet {
+  background-image: url(../img/skynet.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 125px;
+  margin: 0 0 40px;
+}
 .reverse-img {
   transform: scaleX(-1);
 }
@@ -48,9 +59,39 @@ section.area-gray-light {
 section.area-blue {
   background: var(--cyberdyne-blue);
 }
+@font-face {
+  font-family: cyberdyne;
+  src: url(../cyberdyne.ttf);
+}
+@font-face {
+  font-family: terminator;
+  src: url(../terminator.ttf);
+}
+@font-face {
+  font-family: digital;
+  src: url(../digital.otf);
+}
+.cyberdyne-font {
+  font-family: cyberdyne;
+}
+.terminator-font, h2 {
+  font-family: terminator;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+h3, h4 {
+  font-variant: small-caps;
+}
 h1.title {
+  font-size: 5em;
   color: var(--cyberdyne-blue);
   text-shadow: 5px 0px var(--cyberdyne-gray);
+}
+.small-display {
+  font-size: 2em;
+}
+input, button {
+  font-family: digital;
 }
 p.brain-text {
   position: relative;
@@ -66,6 +107,7 @@ p.brain-text {
 }
 img.card-top-img {
   object-fit: cover;
+  max-height: 200px;
 }
 @media screen and (max-width:991px) {
   .card, .bg {
